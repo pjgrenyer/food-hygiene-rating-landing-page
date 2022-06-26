@@ -1,0 +1,21 @@
+{
+  "name": "food-hygiene-rating-landing-page",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "format": "npx prettier --write '*.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjgrenyer/food-hygiene-rating-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjgrenyer/food-hygiene-rating-landing-page/issues"
+  },
+  "homepage": "https://github.com/pjgrenyer/food-hygiene-rating-landing-page#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
