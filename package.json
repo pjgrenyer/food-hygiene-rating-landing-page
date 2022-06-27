@@ -1,6 +1,6 @@
 {
   "name": "food-hygiene-rating-landing-page",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "scripts": {
     "format": "npx prettier --write '*.html'"
