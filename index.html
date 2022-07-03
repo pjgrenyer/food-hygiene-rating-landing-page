@@ -164,6 +164,27 @@
                 </div>
             </div>
         </section>
+        <section>
+            <pre>
+            <code>
+# Create/generate new API Key
+curl -X PUT -d email="&lt;email_address&gt;" https://food-hygiene-rating-service.herokuapp.com/apikey/
+
+# Delete API key
+curl -X DELETE https://food-hygiene-rating-service.herokuapp.com/apikey/&lt;email_address&gt;
+
+# Get page of establishment
+curl -X GET --header "x-api-key: &lt;api-key&gt;" https://food-hygiene-rating-service.herokuapp.com/establishment
+
+# Get paged page of establishment
+curl -X GET --header "x-api-key: &lt;api-key&gt;" https://food-hygiene-rating-service.herokuapp.com/establishment?page=&lt;page>&size=&lt;size&gt;
+
+# Get establishment
+curl -X GET --header "x-api-key: &lt;api-key&gt;" https://food-hygiene-rating-service.herokuapp.com/establishment/&lt;fhrsId&gt;
+
+            </code>
+        </pre>
+        </section>
         <!-- Call to Action-->
         <section class="call-to-action text-white text-center" id="signup">
             <div class="container position-relative">
