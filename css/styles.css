@@ -11331,6 +11331,15 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
+.getting-started .getting-started-text {
+  padding: 3rem;
+}
+@media (min-width: 768px) {
+  .getting-started .getting-started-text {
+    padding: 7rem;
+  }
+} 
+
 .showcase .showcase-text {
   padding: 3rem;
 }
@@ -11342,7 +11351,7 @@ header.masthead h1, header.masthead .h1 {
   .showcase .showcase-text {
     padding: 7rem;
   }
-}
+} 
 
 .testimonials {
   padding-top: 7rem;
