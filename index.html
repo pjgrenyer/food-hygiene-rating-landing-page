@@ -54,7 +54,7 @@
                             <!-- Page heading-->
                             <h2 class="">A SaaS platform for UK</h2>
                             <h1 class="mb-5">Food Hygiene Rating Data</h1>
-                            <h4 class="">Want to be one of the first to try it?</h4>
+                            <h4 class="">Want to be kept up todate on new features?</h4>
                             <h4 class="mb-5">Join via Mailchimp below!</h4>
 
                             <!-- Begin Mailchimp Signup Form -->
@@ -164,12 +164,67 @@
                 </div>
             </div>
         </section>
+
+          <!-- Image Showcases-->
+          <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-12 my-auto showcase-text">
+                        <h2>Want to give it a try?</h2>
+                        <p class="lead mb-0">
+                            <p>
+                                To try out the API you can use <a href="https://curl.se/" target="_blank">curl</a>,
+                                <a href="https://www.postman.com/" target="_blank">Postman</a> or any other REST
+                                 client tool.
+                            </p>
+                            <ol>
+                                <li class = "mt-4">
+                                    <p>Start off by using your email address to create an API key. You can create a new API key in the same way any time you wish. Any previous API key assocaited
+                                        with your email address will be removed and a new one created:</p>
+
+                                   <p> <code>curl -X PUT -d email="&lt;email_address&gt;" https://food-hygiene-rating-service.herokuapp.com/apikey/</code>
+                                   </p>
+
+                                   <p>Should you wish you can delete your API key and removed your access to the API at any time:</p>
+
+                                   <p>
+                                    <code>curl -X DELETE https://food-hygiene-rating-service.herokuapp.com/apikey/&lt;email_address&gt;</code>
+                                   </p>
+
+                                </li>
+                                <li class = "mt-4">                                
+                                    <p>
+                                        Once you have your API key you can use it to page through the establishments. You can
+                                        ask for up to 100 results at a time and the first page is number 1:
+                                    </p>
+
+                                    <p>
+                                        <code>curl -X GET --header "x-api-key: &lt;api-key&gt;" https://food-hygiene-rating-service.herokuapp.com/establishment?page=&lt;page>&size=&lt;size&gt;</code>
+                                    </p>
+                                </li>
+                                <li class = "mt-4">
+                                    <p>
+                                        You can request individual establishments with your API key and an fhrsId from
+                                        the paged results:
+                                    </p>
+
+                                    <p>
+                                        <code>curl -X GET --header "x-api-key: &lt;api-key&gt;" https://food-hygiene-rating-service.herokuapp.com/establishment/&lt;fhrsId&gt;</code>
+                                    </p>
+                                </li>
+                            </ol>
+
+                        </p>
+                    </div>
+                </div>             
+        </section>
+
         <!-- Call to Action-->
         <section class="call-to-action text-white text-center" id="signup">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
-                        <h2 class="mb-4">Want to be one of the first to try it?</h2>
+                        <h2 class="mb-4">Want to be kept up todate on new features?</h2>
                         <!-- Begin Mailchimp Signup Form -->
                         <div id="mc_embed_signup">
                             <form
