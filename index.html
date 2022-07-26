@@ -57,13 +57,22 @@
                             <h2 class="">A SaaS platform for UK</h2>
                             <h1 class="mb-5">Food Hygiene Rating Data</h1>
 
-                            <form id="myForm">
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                                    <div class="text-white hidden" >Email Address is required.</div>
+                                    <div class="text-white hidden" >Email Address Email is not valid.</div>
+                                </div>
+                                <div class="col-auto"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
+                            </div>
+
+                            <!-- <form id="myForm">
                                 <label>First Name:</label>
                                 <input type="text" name="first-name">
                                 <button type="button" id="submitBtn">Submit Form</button>
-                            </form>
+                            </form> -->
 
-                            <a class ="btn btn-primary" href="https://food-hygiene-rating-service.herokuapp.com/" target="_blank">Get Started with the API!</a>
+                            <!-- <a class ="btn btn-primary" href="https://food-hygiene-rating-service.herokuapp.com/" target="_blank">Get Started with the API!</a> -->
                         </div>
                     </div>
                 </div>
